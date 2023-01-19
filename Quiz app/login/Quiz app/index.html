@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="./style.css" />
+        <title>LOGIN</title>
+    </head>
+
+
+    <body>
+    
+    <div class="flexcol">
+
+        <div id="navbar">
+            <h1>(Pak. Studies) QUIZ APP</h1>
+        </div>
+
+        <!-- sign in  card -->
+            <div id="signInCard" class="card">
+                <div class="outside" id="out" onclick="changeMoveIn()" >
+                  <div class="front">
+                    <h2>WELCOME</h2>
+                    <br />
+                    <p><i><u>Click Here</u> to LOGIN </i></p>
+
+
+                  </div>
+                  <div class="back"></div>
+                </div>
+                <div class="inside">
+                    <div>
+                        <button class="backBtn" onclick="changeBackIn()"><img class="backBtnImg" src="./arrow material.png" /></button>
+
+                    </div>
+                    <div class='abc'>
+                    <label for="a1">Username: </label>  
+                    <input type="text" id="a1" maxlength="32" /> <br />
+                    <label for="b1"> Password: </label>
+                    <input type="password" id="b1"  minlength="8" maxlength="12"/>
+                    <br />
+                    <br />
+    
+                    <input class="submit" type="submit" onclick="checkLogin()" action="javascript:void(0)" value="LOGIN"/>
+                <br />
+                <p id="pOR">or</p>
+                    <p id="signup" class="signup">don't haven't account? <a id="link" class="link" onclick="signup()" target="_self">signup</a></p>
+                </div>
+
+                </div>
+              </div>
+
+
+              <!-- sign up card -->
+
+
+              <div id="signUpCard" class="hidden">
+                <div class="outside" id="outup" onclick="changeMoveUp()" >
+                  <div class="front">
+                    <h2>WELCOME</h2>
+                    <br />
+                    <p><i><u>Click Here</u> to SIGNUP </i></p>
+
+
+                  </div>
+                  <div class="back"></div>
+                </div>
+                <div class="inside">
+                    <div>
+                        <button class="backBtn" onclick="changeBackUp()"><img class="backBtnImg" src="./arrow material.png" /></button>
+
+                    </div>
+                    <div class='abc'>
+                    <label for="c1">Enter Your Username: </label>  
+                    <input type="text" id="c1" maxlength="32" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" /> <br />
+                    <label for="d1">Enter Your Password: </label>
+                    <input type="password" id="d1"  minlength="8" maxlength="12"/>
+                    <br />
+                    <br />
+    
+                    <input class="submit" type="submit" onclick="saveSignup()" action="javascript:void(0)" value="SIGNUP"/>
+                <br />
+                <p id="pOR">or</p>
+                    <p id="signup" class="signup">already have account? <a id="link" class="link" onclick="login()">login</a></p>
+                </div>
+
+                </div>
+              </div>
+
+        </div>
+
+<!-- loader -->
+
+    <div id="load" class="loader loader-inner loader-wrapper"> 
+        
+        <h2>WELCOME TO <br /> (Pak. Studies) QUIZ APP</h2>
+    
+
+            <div class="center">
+              <p id="demo"></p>
+            </div>
+    
+    </div>
+
+
+    </body>
+
+
+<script src="./script.js"></script>
+
+
+</html>
