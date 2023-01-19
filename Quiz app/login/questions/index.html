@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="./style.css" />
+        <title>Quiz</title>
+    </head>
+
+
+    <body>
+    
+    <div class="flexcol">
+
+        <div id="navbar">
+
+            <h6 id="timer">2 : 00</h6>
+
+
+        </div>
+
+        <div id="outerbox" class="outerbox">
+
+
+            <form id="q1" action="javascript:void(0)" class="show" onsubmit="assignVariable1()">
+                <p>1. Who was the first President of Pakistan?</p>
+            
+            <div class="align">
+                <input type="radio" onclick="getValue1(this.value)" name="question_1" id="a1" value="Muhammad Ali Jinnah" />
+                <label for="a1">Muhammad Ali Jinnah</label>     <br />
+                <input type="radio" onclick="getValue1(this.value)" name="question_1" id="b1" value="Sikander Mirza" />
+                <label for="b1">Sikander Mirza</label> <br />
+                <input type="radio" onclick="getValue1(this.value)" name="question_1" id="c1" value="Ayub Khan" />
+                <label for="c1">Ayub Khan</label> <br />
+                <input type="radio" onclick="getValue1(this.value)" name="question_1" id="d1" value="Liaquat Ali Khan" />
+                <label for="d1">Liaquat Ali Khan</label>
+            </div>
+            
+                <input class="submit" type="submit" value="NEXT" />
+            </form>
+
+
+            <form id="q2" action="javascript:void(0)" class="hidden" onsubmit="assignVariable2()">
+                <p>2. The Pakistan Independence Movement was led under the leadership of:</p>
+            
+            <div class="align">
+                <input type="radio" onclick="getValue2(this.value)" name="question_2" id="a2" value="Mahatma Gandhi" />
+                <label for="a2">Mahatma Gandhi</label>   <br />
+                <input type="radio" onclick="getValue2(this.value)" name="question_2" id="b2" value="Muhammad Iqbal" />
+                <label for="b2">Muhammad Iqbal</label> <br />
+                <input type="radio" onclick="getValue2(this.value)" name="question_2" id="c2" value="Fatima Jinnah" />
+                <label for="c2">Fatima Jinnah</label> <br />
+                <input type="radio" onclick="getValue2(this.value)" name="question_2" id="d2" value="Muhammad Ali Jinnah" />
+                <label for="d2">Muhammad Ali Jinnah</label> 
+            </div>
+            
+                <input class="submit" type="submit" value="NEXT" />
+            </form>
+
+
+            <form id="q3" action="javascript:void(0)"  class="hidden" onsubmit="assignVariable3()">
+                <p>3. The Pakistan Movement was led by which political Party?</p>
+            
+            <div class="align">
+                <input type="radio" onclick="getValue3(this.value)" name="question_3" id="a3" value="Pakistan Peoples Party" />
+                <label for="a3">Pakistan Peoples Party</label>     <br />
+                <input type="radio" onclick="getValue3(this.value)" name="question_3" id="b3" value="All-India People's Party" />
+                <label for="b3">All-India People's Party </label> <br />
+                <input type="radio" onclick="getValue3(this.value)" name="question_3" id="c3" value="Pakistan Muslim League" />
+                <label for="c3">Pakistan Muslim League</label> <br />
+                <input type="radio" onclick="getValue3(this.value)" name="question_3" id="d3" value="All-India Muslim League" />
+                <label for="d3">All-India Muslim League</label> 
+            </div>
+            
+                <input class="submit" type="submit" value="NEXT" />
+            </form>
+
+
+            <form id="q4" action="javascript:void(0)" class="hidden" onsubmit="assignVariable4()">
+                <p>4. The Independence Day of Pakistan is celebrated:</p>
+            
+            <div class="align">
+                <input type="radio" onclick="getValue4(this.value)" name="question4" id="a4" value="Annually" />
+                <label for="a4">Annually</label>   <br />
+                <input type="radio" onclick="getValue4(this.value)" name="question_4" id="b4" value="Quarterly" />
+                <label for="b4">Quarterly</label>  <br />
+                <input type="radio" onclick="getValue4(this.value)" name="question_4" id="c4" value="Monthly" />
+                <label for="c4">Monthly</label> <br />
+                <input type="radio" onclick="getValue4(this.value)" name="question_4" id="d4" value="Once every two years" />
+                <label for="d4">Once every two years</label>
+            </div>
+            
+                <input class="submit" type="submit" value="NEXT" />
+            </form>
+
+
+            <form id="q5" action="javascript:void(0)" class="hidden" onsubmit="assignVariable5()">
+                <p>5. Where is the tomb of Mughal Emperor Jahangir?</p>
+            
+            <div class="align">
+                <input type="radio" onclick="getValue5(this.value)" name="question_5" id="a5" value="Delhi" />
+                <label for="a5">Delhi</label>      <br />
+                <input type="radio" onclick="getValue5(this.value)" name="question_5" id="b5" value="Agra" />
+                <label for="b5">Agra</label> <br />
+                <input type="radio" onclick="getValue5(this.value)" name="question_5" id="c5" value="Lahore" />
+                <label for="c5">Lahore</label>  <br />
+                <input type="radio" onclick="getValue5(this.value)" name="question_5" id="d5" value="Karachi" />
+                <label for="d5">Karachi</label>
+            </div>
+            
+                <input class="submit" type="submit" value="NEXT" />
+            </form>
+
+
+            <form id="q6" action="javascript:void(0)" class="hidden" onsubmit="assignVariable6()">
+                <p>6. When did Pakistan become a Republic?</p>
+            
+            <div class="align">
+                <input type="radio" onclick="getValue6(this.value)" name="question_6" id="a6" value="14/08/1947" />
+                <label for="a6">14/08/1947</label>    <br />
+                <input type="radio" onclick="getValue6(this.value)" name="question_6" id="b6" value="23/03/1956" />
+                <label for="b6">23/03/1956</label>   <br />
+                <input type="radio" onclick="getValue6(this.value)" name="question_6" id="c6" value="16/12/1971" />
+                <label for="c6">16/12/1971</label> <br />
+                <input type="radio" onclick="getValue6(this.value)" name="question_6" id="d6" value="12/10/1999" />
+                <label for="d6">12/10/1999</label>
+            </div>
+            
+                <input class="submit" type="submit" value="NEXT" />
+            </form>
+
+
+            <form id="q7" action="javascript:void(0)" class="hidden" onsubmit="assignVariable7()">
+                <p>7. Which is the national flower of Pakistan?</p>
+            
+            <div class="align">
+                <input type="radio" onclick="getValue7(this.value)" name="question_7" id="a7" value="Rose" />
+                <label for="a7">Rose</label>      <br />
+                <input type="radio" onclick="getValue7(this.value)" name="question_7" id="b7" value="Thistle" />
+                <label for="b7">Thistle </label> <br />
+                <input type="radio" onclick="getValue7(this.value)" name="question_7" id="c7" value="Jasmine" />
+                <label for="c7">Jasmine</label>  <br />
+                <input type="radio" onclick="getValue7(this.value)" name="question_7" id="d7" value="Camomille" />
+                <label for="d7">Camomille</label>
+            </div>
+            
+                <input class="submit" type="submit" value="NEXT" />
+            </form>
+
+
+            <form id="q8" action="javascript:void(0)" class="hidden" onsubmit="assignVariable8()">
+                <p>8. Who designed Pakistan’s national flag?</p>
+            
+            <div class="align">
+                <input type="radio" onclick="getValue8(this.value)" name="question_8" id="a8" value="Fatima Jinnah " />
+                <label for="a8">Fatima Jinnah</label>     <br />
+                <input type="radio" onclick="getValue8(this.value)" name="question_8" id="b8" value="Ameer-ud-din Khidwai" />
+                <label for="b8">Ameer-ud-din Khidwai</label>   <br />
+                <input type="radio" onclick="getValue8(this.value)" name="question_8" id="c8" value="Wali Khan" />
+                <label for="c8">Wali Khan</label> <br />
+                <input type="radio" onclick="getValue8(this.value)" name="question_8" id="d8" value="Tikka Khan" />
+                <label for="d8">Tikka Khan</label>
+            </div>
+            
+                <input class="submit" type="submit" value="NEXT" />
+            </form>
+
+
+            <form id="q9" action="javascript:void(0)" class="hidden" onsubmit="assignVariable9()">
+                <p>9. Which is the national animal of Pakistan?</p>
+            
+            <div class="align">
+                <input type="radio" onclick="getValue9(this.value)" name="question_9" id="a9" value="Markhor" />
+                <label for="a9">Markhor</label>     <br />
+                <input type="radio" onclick="getValue9(this.value)" name="question_9" id="b9" value="Bear" />
+                <label for="b9">Bear</label> <br />
+                <input type="radio" onclick="getValue9(this.value)" name="question_9" id="c9" value="Lion" />
+                <label for="c9">Lion</label> <br />
+                <input type="radio" onclick="getValue9(this.value)" name="question_9" id="d9" value="Black Panther" />
+                <label for="d9">Black Panther</label>
+            </div>
+            
+                <input class="submit" type="submit" value="NEXT" />
+            </form>
+
+
+            <form id="q10" action="javascript:void(0)" class="hidden" onsubmit="assignVariable10()">
+                <p>10. Which is the national bird of Pakistan?</p>
+            
+            <div class="align">
+                <input type="radio" onclick="getValue10(this.value)" name="question_10" id="a10" value="Eagle" />
+                <label for="a10">Eagle</label>   <br />
+                <input type="radio" onclick="getValue10(this.value)" name="question_10" id="b10" value="Crow" />
+                <label for="b10">Crow</label> <br />
+                <input type="radio" onclick="getValue10(this.value)" name="question_10" id="c10" value="Chakor" />
+                <label for="c10">Chakor</label>   <br />
+                <input type="radio" onclick="getValue10(this.value)" name="question_10" id="d10" value="Peacock" />
+                <label for="d10">Peacock</label>
+            </div>
+            
+                <input class="submit" type="submit" value="SUBMIT" />
+            </form>
+
+
+        </div>
+
+            <!-- scores -->
+
+            <div id="score" class="hidden">
+                <div class="outside" id="outup" onclick="changeMoveUp()" >
+                  <div class="front">
+                    <h2 id="h2">CONGRATULATIONS !!!</h2>
+                  </div>
+                  <div class="back"></div>
+                </div>
+                <div class="inside">
+                    <div>
+                        <button class="backBtn" onclick="changeBackUp()"><img class="backBtnImg" src="../arrow material.png" /></button>
+
+                    </div>
+                    <div class='abc'>
+                        <p id="demo"></p>
+                        <br />
+                        <br />
+                        <input class="scoreSubmit" action="javascript:void(0)" type="submit" value="AGAIN?" onclick="again()" />
+                    </div>
+
+                </div>
+              </div>
+
+            <!-- scores END -->
+
+
+
+
+    </div>
+
+    </body>
+
+
+<script src="./script.js"></script>
+
+
+</html>
