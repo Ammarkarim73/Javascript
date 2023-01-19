@@ -1,0 +1,206 @@
+body{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+#timer
+{
+    text-align: center;
+    margin: 0px;
+    font-size: 3vw;
+    padding: 0px;
+    line-height: 7vw;
+    animation: timer 120s normal ease-out;
+}
+
+@keyframes timer {
+    0%   {color: black;}
+    25%  {color: blue;}
+    50%  {color: green;}
+    75%  {color: orange;}
+    100% {color: red;}
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 5vw;
+    line-height: 55px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
+
+.flexcol{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#navbar {
+    background-image: linear-gradient(to bottom, green , white , green);
+    height: 8vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.outerbox {
+    background-image: linear-gradient(145deg, rgba(0, 128, 0, 0.521), rgba(255, 255, 255, 0.493), rgba(0, 128, 0, 0.514));
+    height: 80vh;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.align {
+    text-align: justify;
+    margin: 0px 0px 0px 30vw;
+    height: 200px;
+    width: 400px;
+    line-height: 40px;
+    font-size: 2vw;
+}
+
+.submit {
+    background: linear-gradient(to right, white, green, green, green);
+    margin-left: 80%;
+    margin-top: -15px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 2vw;
+    height: 5vw;
+    width: 12vw;
+    align-items: center;
+}
+
+
+/* score card */
+
+.card {
+    width: 505px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    transition: 2s;
+}
+
+
+  .outsideMove{
+    transform: rotateY(-130deg);
+    height: 80vh;
+    width: 90vw;
+    position: absolute;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+    cursor: pointer;
+  }
+
+  .outside,
+  .inside {
+    height: 400px;
+    width: 500px;
+    position: absolute;
+}
+
+.inside {
+    background: green;
+    line-height: 3;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 0px 0px 6px white;
+}
+
+.outside {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.front {
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+
+.back {
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+.front {
+    background-image: linear-gradient(150deg, rgba(0, 128, 0, 1), rgba(255, 255, 255, 1), rgba(0, 128, 0, 1));  }
+
+    .back {
+    transform: rotateY(180deg);
+    background: white;
+}
+
+
+.backBtn {
+    margin-left: 65px;
+    margin-top: 40px;
+}
+
+.backBtnImg {
+    width: 30px;
+    height: 30px;
+}
+.abc {
+    margin: auto;
+}
+
+#h2 {
+    margin: auto;
+    text-align: center;
+    line-height: 400px;
+    font-size: 30px;
+}
+
+#demo{
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    line-height: 0px;
+}
+
+.scoreSubmit {
+    background: green;
+    color: white;
+    text-shadow: 0px 0px 5px white;
+    border: none;
+    box-shadow: 0px 0px 7px 5px white;
+    border-radius: 15px;
+    font-size: 28px;
+    height: 35px;
+    width: 115px;
+}
+
+/* score card */
