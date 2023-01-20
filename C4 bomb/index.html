@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css"  />
+    <title>C4</title>
+</head>
+
+<body>
+
+    <div id="bomb">
+
+        <div class="flexcol">
+
+        <div id="wire1"></div>
+        <div id="wire2"></div>
+        <div id="wire3"></div>
+        <div id="wire4"></div>
+        <div id="wire5"></div>
+        <div id="wire6"></div>
+
+        </div>
+        
+
+        <div id="timer">
+
+            <div class="flexcol">
+
+                <div id="greenlight"><abbr title="READY TO PLANT!">98</abbr></div>
+                <div id="redlightblink"></div>
+                <div id="redlight"></div>
+
+
+
+
+            </div>
+
+
+
+            <div class="flexcol">
+
+            <input id="demo" value="45:00" />
+
+            <table id="table">
+
+                <tr>
+                    <td class="btn" onclick="input(1)">1</td>
+                    <td class="btn" onclick="input(3)">3</td>
+                    <td class="btn" onclick="input(5)">5</td>
+                    <td class="btn" onclick="input(7)">7</td>
+                    <td class="btn" onclick="input(9)">9</td>
+                </tr>
+
+                <tr>
+                    <td class="btn" onclick="input(2)">2</td>
+                    <td class="btn" onclick="input(4)">4</td>
+                    <td class="btn" onclick="input(6)">6</td>
+                    <td class="btn" onclick="input(8)">8</td>
+                    <td class="btn" onclick="input(0)">0</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="specialbtn" onclick="start()">START</td>
+                    <td colspan="2" class="specialbtn" onclick="del()">CLR</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+        </div>
+
+    </div>
+
+
+<audio id="audio" src="./button sound.mp3"></audio>
+
+    <audio id="audio1" src="./bomb sound.mp3"></audio>
+
+
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>

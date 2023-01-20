@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Digital Numbers Regular';
+    font-style: italic;
+    font-weight: bolder;
+    src: local('Digital Numbers Regular'), url('./DigitalNumbers-Regular.woff') format('woff');
+    }
+
+
+*{
+    margin: 0px;
+}
+
+body{
+    background-image: url(./bomb.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+#bomb {
+    margin-top: 50vh;
+    display: flex;
+    height: 260px;
+    width: 630px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: #4E5443;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.flexcol {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#wire1 {
+    margin-left: 125px;
+    margin-top: 105px;
+    height: 8px;
+    width: 85px;
+    background-color: black;
+    border-top-left-radius: 20px;
+    box-shadow: -4px 0px rgba(0, 0, 0, 0.562);
+}
+
+#wire2 {
+    margin-left: 125px;
+    margin-top: 0px;
+    height: 8px;
+    width: 85px;
+    background-color: purple;
+    box-shadow: -4px 0px rgba(0, 0, 0, 0.562);
+}
+
+#wire3 {
+    margin-left: 125px;
+    margin-top: 0px;
+    height: 8px;
+    width: 85px;
+    background-color: white;
+    box-shadow: -4px 0px rgba(0, 0, 0, 0.562);
+
+}
+
+#wire4 {
+    margin-left: 125px;
+    margin-top: 0px;
+    height: 8px;
+    width: 85px;
+    background-color: green;
+    box-shadow: -4px 0px rgba(0, 0, 0, 0.562);
+
+}
+
+#wire5 {
+    margin-left: 125px;
+    margin-top: 0px;
+    height: 8px;
+    width: 85px;
+    background-color: blue;
+    box-shadow: -4px 0px rgba(0, 0, 0, 0.562);
+
+}
+
+#wire6 {
+    margin-left: 125px;
+    margin-top: 0px;
+    height: 8px;
+    width: 85px;
+    background-color: red;
+    border-bottom-left-radius: 20px;
+    box-shadow: -4px 0px rgba(0, 0, 0, 0.562);
+}
+
+
+
+#timer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    height: 200px;
+    width: 321px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #2F3030;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+#greenlight{
+    background-color: greenyellow;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    color: transparent;
+    margin-top: 40px;
+}
+
+#greenlight2{
+    background-color: transparent;
+    
+    box-shadow: 0px 0px 3px 5px black inset;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    color: transparent;
+    margin-top: 40px;
+}
+
+#redlightblink{
+    height: 15px;
+    width: 15px;
+    margin-top: 10px;
+    /* box-shadow: 0px 0px 10px 5px red inset; */
+    box-shadow: 0px 0px 3px 5px black inset;
+}
+
+#redlightblink2{
+    height: 15px;
+    width: 15px;
+    margin-top: 10px;
+    background-color: red;
+    box-shadow: 0px 0px 3px 5px black inset;
+}
+
+#redlightblink3 {
+    height: 15px;
+    width: 15px;
+    margin-top: 10px;
+    background-color: red;
+    transition: all 1s ease-out;
+    box-shadow: none;
+}
+
+
+#redlight{
+    height: 15px;
+    width: 15px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 3px 5px black inset;
+}
+
+#redlight2{
+    height: 15px;
+    width: 15px;
+    margin-top: 10px;
+    background-color: rgb(253, 25, 25);
+}
+
+
+
+
+#demo {
+    height: 50px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    color: darkred;
+    cursor: default;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Digital Numbers Regular';
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #048166;
+}
+
+#table{
+    padding: 0px 10px 0px 10px;
+    height: 0px;
+    width: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.btn{
+    background-color: #707070;
+    border: 2px solid black;
+    text-align: center;
+    width: 30px;
+    height: 25px;
+}
+
+.btn:hover{
+    background-color: #707070;
+    box-shadow: 0px 0px 3px 5px black inset;
+    text-align: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.specialbtn{
+    border: 2px solid black;
+    background-color: #707070;
+    text-align: center;
+    width: 30px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.specialbtn:hover{
+    background-color: #707070;
+    box-shadow: 0px 0px 3px 5px black inset;
+    text-align: center;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    overflow: hidden;
+}
